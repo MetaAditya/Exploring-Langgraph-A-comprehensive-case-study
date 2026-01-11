@@ -1,3 +1,6 @@
+Below are step by step instructions on how to run on your local machine
+
+
 ###Create Virtual Environment ###########
 python3 -m venv venv
 pip install -r requirements.txt
@@ -78,3 +81,11 @@ c) Post Diagnosis Subgraph (post_diagnosis_subgraph.py)
 3) The necessary data to simulate responses are in patient_data.py
 
 4) The global variable definitions are in state_models.py
+####################################################################################################################################################################################
+
+DEMO VIDEO
+[![Demo Video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=rkKBab61ipg)
+
+
+
+
