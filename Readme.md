@@ -84,7 +84,7 @@ c) Post Diagnosis Subgraph (post_diagnosis_subgraph.py)
 ####################################################################################################################################################################################
 
 DEMO VIDEO
-[![Demo Video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=rkKBab61ipg)
+[![Demo Video](https://img.youtube.com/vi/rkKBab61ipg/0.jpg)](https://www.youtube.com/watch?v=rkKBab61ipg)
 
 
 
