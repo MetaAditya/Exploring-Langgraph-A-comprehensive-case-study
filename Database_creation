@@ -1,0 +1,29 @@
+
+sudo -u postgres psql
+CREATE ROLE langgraph_user WITH LOGIN PASSWORD 'langgraph_password';
+ALTER ROLE langgraph_user CREATEDB;
+
+
+
+psql -U langgraph_user -d langgraph_DB -h 127.0.0.1 -W
+langgraph_password
+
+CREATE DATABASE "langgraph_DB";
+ALTER DATABASE "langgraph_DB" OWNER TO langgraph_user;
+
+####################################3
+
+-- Delete the table if it already exists
+DROP TABLE IF EXISTS store;
+
+-- Recreate the table with the correct schema
+CREATE TABLE store (
+    prefix TEXT NOT NULL,
+    key TEXT NOT NULL,
+    value JSONB NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    expires_at TIMESTAMP WITH TIME ZONE,
+    ttl_minutes INTEGER,
+    PRIMARY KEY (prefix, key)
+);
